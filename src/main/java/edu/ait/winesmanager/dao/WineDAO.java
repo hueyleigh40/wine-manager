@@ -61,4 +61,10 @@ public class WineDAO {
             throw new WineNotFoundException("Unable to find wine with id: " + id);
         }
     }
+
+    public void createWine(Wine newWine)
+    {
+        // add new wine
+        wineList.add(newWine);
+    }
 }
